@@ -33,8 +33,11 @@ For more info, you can check out https://github.com/facebook/create-react-app
 
 ## Bonus
 
+
+- Can you handle failed API requests gracefully? Maybe redirect to a 'failed' UI state with a rety option? 
 - Can you get the videos to play inline when the 'play' icon is tapped?
 - What steps can you take to optimize the load time of cover photos? How about the scroll performance? 
+- Can you add pull-to-refresh? 
 
 ## Questions?
 
