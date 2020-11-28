@@ -7,7 +7,12 @@ You will be building a simplified version of our main app, the Plug (www.plugco.
 We've spun up an endpoint on our server to return a sample feed of offers as a JSON blob. You can access that here:
 http://www.plugco.in/public/take_home_sample_feed
 
-Your job is set up a react project that calls the sample endpoint and renders feed based on the JSON data returned. I've provided the design and an explanation of each component in a Sketch file - 'feed_template_react_01.sketch'. This file is included in the repository:
+Your job is set up a react project that calls the sample endpoint and renders feed based on the JSON data returned. 
+
+You can find the design and an explanation of each component in this Figma file:
+https://www.figma.com/file/1exs9yHG251QWdUy2YztUg/takehome_template_ios_01?node-id=0%3A1
+
+If you prefer Sketch, I've also included the same design in a sketch file, in this repository: 'feed_template_react_01.sketch'.
 
 ![starter-screenshot](https://i.imgur.com/ynkHNTC.png)
 
