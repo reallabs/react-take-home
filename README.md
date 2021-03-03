@@ -5,7 +5,7 @@ This is a frontend exercise that will give you the chance to see what kind of th
 You will be building a simplified version of our main app, the Plug (www.plugco.in). This is the app through which our influencer access our offers, track their earnings, and manage their account. In particular, you will be recreating our main 'offer' feed:
 
 We've spun up an endpoint on our server to return a sample feed of offers as a JSON blob. You can access that here:
-http://www.plugco.in/public/take_home_sample_feed
+https://www.plugco.in/public/take_home_sample_feed
 
 Your job is set up a react project that calls the sample endpoint and renders feed based on the JSON data returned. 
 
