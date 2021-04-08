@@ -1,0 +1,32 @@
+.cardImg{
+    height: 75px;
+    width: 75px;
+}
+
+.per_install{
+    margin-top: 5px;
+    color: #009330;
+}
+
+.mediaRow{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.campaignCol {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.campaignTitle {
+    margin-left: 10px
+}
+
+.campaignTitleText {
+    margin-bottom: 10px
+}
+
+.campaignCard {
+    margin-bottom: 25px;
+    border-bottom: 1px solid lightgray;
+}
