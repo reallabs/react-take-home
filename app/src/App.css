@@ -31,3 +31,55 @@
     transform: rotate(360deg);
   }
 }
+
+.campain-icon{
+  width: 50px;
+}
+.header-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.header-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.header-pay{
+  color: rgb(1, 210, 1);
+}
+.app-body{
+  margin: auto;
+  width: 500px;
+}
+.offer-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.parent {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
+}
+
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color: #555; */
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
