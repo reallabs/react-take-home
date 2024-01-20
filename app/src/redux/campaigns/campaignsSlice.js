@@ -13,8 +13,12 @@ export const fetchCampaign = createAsyncThunk(
       console.log('data', data);
       return data;
     } catch (error) {
-      return null;
+      console.error('Error fetching campaign data:', error);
+      throw error; // rethrow the error to be caught in the rejected case
     }
+    // } catch (error) {
+    //   return null;
+    // }
   },
 );
 fetchCampaign();
@@ -24,6 +28,8 @@ const campaignsSlice = createSlice({
   name: 'campaigns',
   initialState: {
     campaigns: [],
+    loading: false,
+    error: null,
   },
   reducers: {
     setCampaigns: (state, action) => {
@@ -38,6 +44,7 @@ const campaignsSlice = createSlice({
         state.error = null;
       })
       .addCase(fetchCampaign.fulfilled, (state, action) => {
+        console.log('Fulfilled Payload:', action.payload);
         state.loading = false;
         state.campaigns = action.payload;
       })

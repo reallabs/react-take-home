@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { fetchCampaign } from "../redux/campaigns/campaignsSlice";
+import { useDispatch } from "react-redux";
 
-function Details() {
-  console.log('test');
-  console.log(fetchCampaign());
-  
+const Details = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCampaign());
+  },[dispatch]);
+
   return (
     <div>
       Celebs icon
