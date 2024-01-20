@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  margin-left: 36px;
+  margin-top: 24px;
+}
+
+.campaign-icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.name-pay {
+  list-style: none;
+}
+
+/* .scrollable-container {
+  background-color: aqua;
+} */
+
+.photo img {
+  width: 300px;
+}
+
+.scrollable-container li {
+  display: flex;
+}
+
+.photo {
+  /* background-color: red; */
+  margin: 4px 4px;
+  width: 300px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: no-wrap;
+  display: flex;
+}
+
+.photo li {
+  /* border: 2px solid black; */
+  margin: 12px 24px;
+}

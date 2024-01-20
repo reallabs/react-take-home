@@ -44,9 +44,9 @@ const campaignsSlice = createSlice({
         state.error = null;
       })
       .addCase(fetchCampaign.fulfilled, (state, action) => {
-        console.log('Fulfilled Payload:', action.payload);
+        console.log('Fulfilled Payload:', action.payload.campaigns);
         state.loading = false;
-        state.campaigns = action.payload;
+        state.campaigns = action.payload.campaigns;
       })
       .addCase(fetchCampaign.rejected, (state, action) => {
         state.loading = false;

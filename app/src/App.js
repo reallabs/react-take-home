@@ -3,20 +3,17 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import './App.css';
 import Navigation from './components/Navigation';
-import Header from './components/Header';
+// import Header from './components/Header';
 import MediaObject from './components/MediaObject';
-import Details from './components/Details';
-import Footer from './components/Footer';
+// import Details from './components/Details';
+// import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
         <Navigation />
-        <Header />
         <MediaObject />
-        <Details />
-        <Footer />
       </Provider>
     </div>
   );
