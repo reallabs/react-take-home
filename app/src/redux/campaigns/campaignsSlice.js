@@ -5,7 +5,12 @@ export const fetchCampaign = createAsyncThunk(
   async () => {
     try {
       const response = await fetch('https://www.plugco.in/public/take_home_sample_feed');
+
+      if (response.status !== 200) {
+        throw new Error(`Failed to fetch campaign data. Status: ${response.status}`);
+      }
       const data = await response.json();
+      console.log('data', data);
       return data;
     } catch (error) {
       return null;
@@ -15,13 +20,15 @@ export const fetchCampaign = createAsyncThunk(
 fetchCampaign();
 
 
-const campaignSlice = createSlice({
+const campaignsSlice = createSlice({
   name: 'campaigns',
   initialState: {
     campaigns: [],
   },
   reducers: {
-    setCampaigns: (state, action) => action.payload,
+    setCampaigns: (state, action) => {
+      state.campaigns = action.payload;
+    }
     },
 
   extraReducers: (builder) => {
@@ -41,4 +48,4 @@ const campaignSlice = createSlice({
   },
 });
 
-export default campaignSlice.reducer;
+export default campaignsSlice.reducer;
