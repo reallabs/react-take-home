@@ -13,29 +13,57 @@
   list-style: none;
 }
 
-/* .scrollable-container {
-  background-color: aqua;
-} */
-
 .photo img {
-  width: 300px;
+  max-width: 350px;
 }
 
-.scrollable-container li {
-  display: flex;
+.scrollable-container {
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .photo {
-  /* background-color: red; */
-  margin: 4px 4px;
-  width: 300px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: no-wrap;
-  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
 }
 
-.photo li {
-  /* border: 2px solid black; */
-  margin: 12px 24px;
+.media-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.button-container {
+  position: absolute;
+  /* bottom: 0; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link {
+  width: 175px;
+  height: 50px;
+}
+
+.link-size {
+  width: 30px;
+  height: 30px;
+}
+
+/* .tracking-link {
+
+} */
+
+.media-type {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+  /* background-color: #fff; */
 }
