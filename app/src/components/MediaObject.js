@@ -12,12 +12,6 @@ function MediaObject() {
     dispatch(fetchCampaign());
   },[dispatch]);
 
-  // const handleMediaType = () => {
-  //   let mediaType = campaignHeader.campaigns.medias.media_type;
-  //   (mediaType === "video") ? <FaPlay /> : " ";
-
-  //   }
-
   return (
     <div className="photo-container">
       <div className="scrollable-list">
@@ -29,7 +23,7 @@ function MediaObject() {
               </div>
               <div>
                 <ul className="name-pay">
-                  <li>{campaign.campaign_name}</li>
+                  <li><h1>{campaign.campaign_name}</h1></li>
                   <li> {campaign.pay_per_install}</li>
                 </ul>
               </div>
@@ -37,10 +31,10 @@ function MediaObject() {
             <div className="scrollable-container">
               <ul className="photo">
                 {campaign.medias.map((media) => (
-                  <li key={campaign.id} className="media-item">
+                  <li key={media.cover_photo_url} className="media-item">
                     <img src={media.cover_photo_url} alt="#" />
                     <div className="button-container">
-                      <button type="button" className="link">
+                      <button type="button" className="btn link">
                         <a
                           href={media.tracking_link}
                           className="tracking-link"
@@ -50,7 +44,7 @@ function MediaObject() {
                           <FaLink className="link-size" />
                         </a>
                       </button>
-                      <button type="button" className="link">
+                      <button type="button" className="btn link">
                         <a
                           href={media.download_url}
                           className="download"
@@ -61,7 +55,7 @@ function MediaObject() {
                       </button>
                     </div>
                     <div className="media-type">
-                      {media.media_type === "video" ? <FaPlay className="play" /> : " "};
+                      {media.media_type === "video" ?  <FaPlay className="play" /> : " "};
                     </div>
                   </li>
                 ))}

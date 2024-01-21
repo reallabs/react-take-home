@@ -1,6 +1,8 @@
 .header {
   display: flex;
-  margin-left: 36px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  margin-left: 26px;
   margin-top: 24px;
 }
 
@@ -14,12 +16,16 @@
 }
 
 .photo img {
-  max-width: 350px;
+  width: 350px;
+  height: 550px;
 }
 
 .scrollable-container {
   overflow-x: auto;
   white-space: nowrap;
+  margin-bottom: 100px;
+  /* border: 2px solid red; */
+  height: 650px;
 }
 
 .photo {
@@ -44,11 +50,18 @@
 .link {
   width: 175px;
   height: 50px;
+  background-color: #fff;
+  border: 1px solid darkgray;
+}
+
+.link:hover {
+  border: #fff;
 }
 
 .link-size {
   width: 30px;
   height: 30px;
+  fill: darkgray;
 }
 
 /* .tracking-link {
@@ -57,7 +70,7 @@
 
 .media-type {
   position: absolute;
-  bottom: 0;
+  bottom: 250px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -65,5 +78,6 @@
 .play {
   width: 40px;
   height: 40px;
+  fill: #fff;
   /* background-color: #fff; */
 }
